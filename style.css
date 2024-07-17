@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+html,
+/* body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+} */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tab-button.active {
+  background-color: #333;
+  color: white;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  position: relative; 
+}
+
+.product-card img {
+  width: 100%;
+  height: 266px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background-color: white;
+  color: black;
+  padding: 2px 5px;
+  position: absolute;
+  top: 20px; 
+  left: 10px;
+  z-index: 1; 
+}
+
+.title-vendor-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1; 
+  margin: 0;
+  padding: 0;
+  margin-right: 10px; 
+  text-align: left;
+}
+
+.vendor {
+  font-size: 14px;
+  color: #666;
+  flex-shrink: 0; 
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.vendor::before {
+  content: '•';
+  color: black;
+  margin-right: 5px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.compare-price {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.discount {
+  color: rgb(243, 71, 171);
+  font-weight: bold;
+}
+
+button.add-to-cart {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 20px; 
+  cursor: pointer;
+  width: 100%; 
+  border-radius: 10px; 
+  margin-top: 10px; 
+  font-size: 16px; 
+}
